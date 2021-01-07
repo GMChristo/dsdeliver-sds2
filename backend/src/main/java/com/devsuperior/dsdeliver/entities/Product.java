@@ -27,13 +27,13 @@ public class Product implements Serializable {
 	public Product() {
 	}
 
-	public Product(Long id, String name, Double price, String description, String imageUrl) {
+	public Product(Long id, String name, Double price, String description, String imageUri) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.price = price;
 		this.description = description;
-		this.imageUri = imageUrl;
+		this.imageUri = imageUri;
 	}
 
 	public Long getId() {
@@ -68,12 +68,12 @@ public class Product implements Serializable {
 		this.description = description;
 	}
 
-	public String getImageUrl() {
+	public String getImageUri() {
 		return imageUri;
 	}
 
-	public void setImageUrl(String imageUrl) {
-		this.imageUri = imageUrl;
+	public void setImageUrl(String imageUri) {
+		this.imageUri = imageUri;
 	}
 
 	@Override
